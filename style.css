@@ -7,3 +7,91 @@
     scroll-behavior: smooth;
     text-decoration: none;
 }
+:root{
+    --text-color: #987554;
+    --hover-color: #5767c1;
+    --bg-color:#E5D3BD;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-landing.jpg);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 5px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #987554;
+    text-decoration: none;
+    font-size: 18px;
+    position: sticky;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--hover-color);
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+    box-shadow: var(--font-neon-text-shadow);
+}
+
+.header-text{
+    position: absolute;
+    bottom: 50%;
+    margin-left: 0;
+    animation: transitionIn 0.75s;
+}
+
+.header-text h1 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: -5px;
+}
+
+
