@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 
 .header-text{
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     margin-left: 0;
     animation: transitionIn 0.75s;
 }
@@ -107,14 +107,15 @@ nav ul li a:hover::after{
 .btn1{
     border: 1px solid #b99976;
     background: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 20px;
     font-family: poppins;
     cursor: pointer;
-    margin: 35% 10px;
+    margin:  10px;
     border-radius: 4px;
     overflow: hidden;
     color: var(--text-color);
+    
 }
 
 
