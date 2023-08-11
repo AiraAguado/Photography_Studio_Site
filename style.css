@@ -89,6 +89,24 @@ nav ul li a:hover::after{
     margin-left: 0;
     animation: transitionIn 0.75s;
 }
+.header-text-port{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 0;
+    animation: transitionIn 0.75s;
+}
+.header-text-about{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 0;
+    animation: transitionIn 0.75s;
+}
+.header-text-gallery{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 0;
+    animation: transitionIn 0.75s;
+}
 
 .header-text h1 {
     font-family: fantasy;
@@ -97,8 +115,44 @@ nav ul li a:hover::after{
     line-height: 100px;
     margin-left: -5px;
 }
+.header-text-port h1 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: -5px;
+}
+.header-text-about h1 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: -5px;
+}
+.header-text-gallery h1 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: -5px;
+}
 
 .header-text h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.header-text-port h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.header-text-about h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.header-text-gallery h3{
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
@@ -122,5 +176,3 @@ nav ul li a:hover::after{
 .btn1:hover{
     color: var(--hover-color);
 }
-
-
