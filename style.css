@@ -82,6 +82,11 @@ nav ul li a:hover::after{
     width: 50%;
     box-shadow: var(--font-neon-text-shadow);
 }
+a.active {
+    font-size: 115%;
+    color: #492c0a;
+    transition: .5s;
+}
 
 .header-text{
     position: absolute;
@@ -90,21 +95,18 @@ nav ul li a:hover::after{
     animation: transitionIn 0.75s;
 }
 .header-text-port{
-    position: absolute;
+    text-align: center;
     bottom: 15%;
-    margin-left: 0;
     animation: transitionIn 0.75s;
 }
 .header-text-about{
-    position: absolute;
+    text-align: center;
     bottom: 15%;
-    margin-left: 0;
     animation: transitionIn 0.75s;
 }
 .header-text-gallery{
-    position: absolute;
+    text-align: center;
     bottom: 15%;
-    margin-left: 0;
     animation: transitionIn 0.75s;
 }
 
@@ -122,6 +124,7 @@ nav ul li a:hover::after{
     line-height: 100px;
     margin-left: -5px;
 }
+
 .header-text-about h1 {
     font-family: fantasy;
     font-weight: 100;
@@ -172,7 +175,107 @@ nav ul li a:hover::after{
     
 }
 
-
 .btn1:hover{
     color: var(--hover-color);
 }
+
+/* Contact us start */
+.contact-us{
+    min-height: 100vh;
+    width: 100%;
+    background: #E5D3BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .container{
+    width: 80%;
+    background: #f5e2ca;
+    border-radius: 7px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px #664229;
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--text-color);
+}
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;    
+}
+.content .left-side .details i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+}
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .right-side .topic-text{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--hover-color);
+}
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;    
+    background: #E5D3BD;
+    border-radius: 7px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+    
+}
+.right-side .button{
+    margin-top: 7px;
+}
+.right-side .button input[type="button"]{
+    color: var(--bg-color);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #987554;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right-side .button input[type="button"]:hover{
+    background: #492c0a;
+}
+/* Contact us End */
